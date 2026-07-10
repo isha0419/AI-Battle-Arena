@@ -12,10 +12,6 @@ app.use(cors({
 }))
 
 
-app.get('/',async(req,res)=>{
-    console.log("Hello world")
-})
-
 app.post("/invoke",async (req,res)=>{
     const {input} = req.body
     const result = await runGraph(input)
