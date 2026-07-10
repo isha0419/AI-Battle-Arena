@@ -29,7 +29,7 @@ export default function ChatInterface() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:3000/invoke",
+       `${import.meta.env.VITE_API_URL}/invoke`,
         {
           input: inputValue,
         }
