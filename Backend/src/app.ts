@@ -11,6 +11,13 @@ app.use(cors({
     credentials:true
 }))
 
+app.get("/",(req,res)=>{
+    res.status(200).json({
+        message:"Server is running",
+        success:true
+    })
+})
+
 
 app.post("/invoke",async (req,res)=>{
     const {input} = req.body
