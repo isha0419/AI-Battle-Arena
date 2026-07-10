@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(cors({
     origin:[
         "http://localhost:5173", 
-        "https://ai-battle-arena-backend-0ezw.onrender.com/"
+        "https://ai-battle-arena-web.onrender.com/"
     ],
     methods:["GET","POST"],
     credentials:true
